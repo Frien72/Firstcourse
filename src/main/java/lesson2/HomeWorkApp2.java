@@ -5,7 +5,7 @@ public class HomeWorkApp2 {
     public static void main(String[] args) {
           nubmerIncluded();
           checkPositiveNumber();
-          checkAnotherPositiveNumber();
+          checkNegativeNumber();
           printSetQuantity();
           leapYear();
 
@@ -42,7 +42,7 @@ public class HomeWorkApp2 {
         }
     }
 
-    private static void checkAnotherPositiveNumber() {
+    private static void checkNegativeNumber() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Задача на проверку отрицательности числа, вывод boolean");
         System.out.println("напиши число");
