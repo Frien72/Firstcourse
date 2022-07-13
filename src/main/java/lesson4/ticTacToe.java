@@ -19,8 +19,6 @@ public class ticTacToe {
     private static Scanner in = new Scanner(System.in);
     private static Random random = new Random();
     private static int turnsCount;
-    private static int lastTurnRow;
-    private static int lastTurnColumn;
 
     public static void main(String[] args) {
         initMap();
@@ -159,14 +157,7 @@ public class ticTacToe {
     }
 
     private static boolean checkDraw() {
-/*        for (char[] chars : MAP) {
-            for (char symbol : chars) {
-                if (symbol == DOT_EMPTY) {
-                    return false;
-                }
-            }
-        }
-        return true;*/
+
 
         return turnsCount >= SIZE * SIZE;
     }
@@ -177,14 +168,6 @@ public class ticTacToe {
         int rowNumber;
         int columnNumber;
 
-/*        while (true) {
-            rowNumber = random.nextInt(SIZE);
-            columnNumber = in.nextInt(SIZE);
-
-            if (isCellFree(rowNumber, columnNumber)) {
-                break;
-            }
-        }*/
         do {
             rowNumber = random.nextInt(SIZE);
             columnNumber = random.nextInt(SIZE);
