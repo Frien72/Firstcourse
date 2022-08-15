@@ -39,13 +39,6 @@ public class Box<T extends Fruit> {
         this.fruits = fruits;
     }
 
-    public void swapFruits(int e1Index, int e2Index) {
-        checkGetIndex(e1Index);
-        checkGetIndex(e2Index);
-        T e1Link = fruits[--e1Index];
-        fruits[e1Index] = fruits[--e2Index];
-        fruits[e2Index] = e1Link;
-    }
 
     private void checkGetIndex(int index) {
         if (index < 1 || index > fruits.length) throw new RuntimeException("Указанный индекс отстуствует в массиве");
